@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error{
+            color: #fc2525;
+            font-size: 16px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>REGISTRATION FORM</h2>
+    <form id="REGISTRATIONFORM" onsubmit="">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name"name="name"required>
+        <div id="nameError" class="error"></div>
+        <br><br> 
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <div id="emailError" class="error"></div>
+        <br><br>
+
+        <label for="password">password:</label><br>
+        <input type="password" id="password" name="password" required>
+        <div id="password" class="error"></div>
+        <br><br>
+
+        <label for="phone">Phone number:</label><br>
+        <input type="phone" id="phone" name="phone"required>
+        <div id="phoneError" class="error"></div>
+        <br><br>
+        <button type="submit">SUBMIT</button>
+        <script src="./validate.js"></script>
+
+
+    </form>
+</body>
+</html>
